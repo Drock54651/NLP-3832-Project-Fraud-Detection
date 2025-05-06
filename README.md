@@ -51,6 +51,6 @@ After additional fine-tuning on the SMS and email datasets: accuracy - , F-1 sco
 
 Work distribution:
 - Declan:  fine-tuning the BERT model on SMS and email
-- Derick:  unlabeled data scraping
+- Derick:  model evaluation
 - John: fine-tuning the BERT model on the job postings dataset
 - Taya: all the data pre-processing and tokenization
