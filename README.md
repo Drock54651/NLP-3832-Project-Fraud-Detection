@@ -21,15 +21,36 @@ Run all cells in lab. If you experience memory issues run all cells except the c
 
 Do not run the graphing cells at the end of the notebook before training and test all models, this will cause errors.
 
-The following libraries are required and may need to be installed:
-Pytorch
-Pandas
-Numpy
-Seaborn
-Nltk
-huggingface datasets
-tqdm
-pytorch-transformers
+The following libraries are required and may need to be installed: Pytorch, Pandas, Numpy, Seaborn, Nltk, huggingface datasets, tqdm, pytorch-transformers
 
 
-All hyperparameters used and all data preprocessing is in the Notebook.
+The data preprocessing is done in the notebook. It shows the distributions in data, merges categorical columns into 1 text field, and includes cleaning functions to remove white spaces, numbers, and hyperlinks. Additionally, the input was tokenized using a pre-trained BERT tokenizer. (You should be able to get the data preprocessed by just running the notebook).
+
+Model's hyperparameters:
+- MODEL_NAME = "bert-base-uncased"
+- BATCH_SIZE = 16
+- MAX_LEN    = 128
+- EPOCHS     = 10
+- LR         = 2e-5
+
+After initial fine-tuning on the job postings dataset:
+- Expected test set performance for job postings: accuracy - 98%, F-1 score - 
+- Expected test set performance for unlabeled Indeed postings:
+  - soft-max derived probabilities distribution: mostly within 80-100% for predictions
+- Expected test set performance for unlabeled LinkedIn postings:
+  - softmax derived probabilities distribution: mostly within 80-100% for predictions
+ - Expected test set performance for SMS spam: accuracy - , F-1 score - 
+ - Expected test set performance for email spam: accuracy - , F-1 score -
+   
+Examples of what the model labeled as fraudulent in the unlabeled data:
+
+After additional fine-tuning on the SMS and email datasets: accuracy - , F-1 score - 
+- Expected test set performance for job postings: accuracy - , F-1 score - 
+- Expected test set performance for unlabeled Indeed postings: accuracy - , F-1 score - 
+- Expected test set performance for unlabeled LinkedIn postings: accuracy - , F-1 score -
+
+Work distribution:
+- Declan:  fine-tuning the BERT model on SMS and email
+- Derick:  unlabeled data scraping
+- John: fine-tuning the BERT model on the job postings dataset
+- Taya: all the data pre-processing and tokenization
