@@ -46,8 +46,8 @@ Examples of what the model labeled as fraudulent in the unlabeled data:
 
 After additional fine-tuning on the SMS and email datasets: accuracy - , F-1 score - 
 - Expected test set performance for job postings: accuracy - , F-1 score - 
-- Expected test set performance for unlabeled Indeed postings: accuracy - , F-1 score - 
-- Expected test set performance for unlabeled LinkedIn postings: accuracy - , F-1 score -
+- Expected test set performance for unlabeled Indeed postings: 
+- Expected test set performance for unlabeled LinkedIn postings: 
 
 Work distribution:
 - Declan:  fine-tuning the BERT model on SMS and email
