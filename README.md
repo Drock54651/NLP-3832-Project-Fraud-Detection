@@ -30,3 +30,6 @@ Nltk
 huggingface datasets
 tqdm
 pytorch-transformers
+
+
+All hyperparameters used and all data preprocessing is in the Notebook.
