@@ -41,8 +41,17 @@ After initial fine-tuning on the job postings dataset:
   - softmax derived probabilities distribution: mostly within 80-100% for predictions
  - Expected test set performance for SMS spam: accuracy - , F-1 score - 
  - Expected test set performance for email spam: accuracy - , F-1 score -
-   
+  
+
+Note: For the unlabeled datasets, we did not have any way of discerning some kind of ground truth for them. Instead, they were used as a way to see what our already trained model would label them as. After doing so, a human could extract the postings labeled as fraudulent by the model and the human would have to check if those postings are truely fraudulent or not.
+
 Examples of what the model labeled as fraudulent in the unlabeled data:
+  - Indeed: [Example 1](/images/Indeed/Screenshot%202025-05-05%20205621.png), [Example 2](/images//Indeed/Screenshot%202025-05-05%20205833.png)
+  - LinkedIn: [Example 1](/images/LinkedIn/Screenshot%202025-05-05%20205037.png), [Example 2](/images/LinkedIn/Screenshot%202025-05-05%20205354.png)
+
+Example of what the model labeled as fraudulent in the labeled SMS and Email data:
+  - SMS: [Example](/images/SMS/Screenshot%202025-05-05%20210058.png)
+  - Email: [Example](/images/Email/Screenshot%202025-05-05%20210304.png)
 
 After additional fine-tuning on the SMS and email datasets: accuracy - , F-1 score - 
 - Expected test set performance for job postings: accuracy - , F-1 score - 
