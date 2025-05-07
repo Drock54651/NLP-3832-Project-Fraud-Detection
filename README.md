@@ -7,6 +7,14 @@ Dataset Links (Too big for Github):
 - SMS Spam: https://huggingface.co/datasets/ucirvine/sms_spam
 - Email Spam: https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification
 
+## Important Note About Branches 
+We decided to divide certain aspects of our projects via branches.
+- The main branch is responsible for the initial data preprocessing and is the foundation for the other 2 branches.
+- The Evaluation branch introduces the unlabeled LinkedIn and Indeed datasets, and consists of having our trained model predict on the 2 unlabeled dataset in addition to the email and sms test sets.
+- The Fine-tuning branch includes making adjustments to our model and also for displaying additional metrics like the f1-scores.
+
+Overall you should mainly be switching between the Evaluation and Fine-tuning branch if you want to see our results.
+  
 How to reproduce:
 The above datasets will need to be downloaded except for the Huggingface dataset. All datasets must be present in the Data directory.
 Please ensure the datasets have the following names:
@@ -52,6 +60,7 @@ Examples of what the model labeled as fraudulent in the unlabeled data:
 Example of what the model labeled as fraudulent in the labeled SMS and Email data:
   - SMS: [Example](/images/SMS/Screenshot%202025-05-05%20210058.png)
   - Email: [Example](/images/Email/Screenshot%202025-05-05%20210304.png)
+  - 
 After additional finetuning on SMS:
 - Expected test set performance for job postings: accuracy - 97%, F-1 score - 85%
 - Expected test set performance for spam email: accuracy - 49%, F-1 score - 55%
