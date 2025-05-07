@@ -46,13 +46,15 @@ Model's hyperparameters:
 - LR         = 2e-5
 
 After initial fine-tuning on the job postings dataset:
+
 - Expected test set performance for job postings: accuracy - 98%, F-1 score - 85%
 - Expected test set performance for unlabeled Indeed postings:
   - soft-max derived probabilities distribution: mostly within 80-100% for predictions
 - Expected test set performance for unlabeled LinkedIn postings:
   - softmax derived probabilities distribution: mostly within 80-100% for predictions
- - Expected test set performance for SMS spam: accuracy - , F-1 score -
- - Expected test set performance for email spam: accuracy - , F-1 score -
+- Expected test set performance for SMS spam: accuracy - 85%, F-1 score - 34%
+- Expected test set performance for email spam: accuracy - 46%, F-1 score - 14%
+
   
 
 Note: For the unlabeled datasets, we did not have any way of discerning some kind of ground truth for them. Instead, they were used as a way to see what our already trained model would label them as. After doing so, a human could extract the postings labeled as fraudulent by the model and the human would have to check if those postings are truely fraudulent or not.
