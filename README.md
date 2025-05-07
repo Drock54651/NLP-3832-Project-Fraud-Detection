@@ -30,16 +30,16 @@ Model's hyperparameters:
 - MODEL_NAME = "bert-base-uncased"
 - BATCH_SIZE = 16
 - MAX_LEN    = 128
-- EPOCHS     = 10
+- EPOCHS     = 6
 - LR         = 2e-5
 
 After initial fine-tuning on the job postings dataset:
-- Expected test set performance for job postings: accuracy - 98%, F-1 score - 
+- Expected test set performance for job postings: accuracy - 98%, F-1 score - 85%
 - Expected test set performance for unlabeled Indeed postings:
   - soft-max derived probabilities distribution: mostly within 80-100% for predictions
 - Expected test set performance for unlabeled LinkedIn postings:
   - softmax derived probabilities distribution: mostly within 80-100% for predictions
- - Expected test set performance for SMS spam: accuracy - , F-1 score - 
+ - Expected test set performance for SMS spam: accuracy - , F-1 score -
  - Expected test set performance for email spam: accuracy - , F-1 score -
   
 
@@ -52,9 +52,13 @@ Examples of what the model labeled as fraudulent in the unlabeled data:
 Example of what the model labeled as fraudulent in the labeled SMS and Email data:
   - SMS: [Example](/images/SMS/Screenshot%202025-05-05%20210058.png)
   - Email: [Example](/images/Email/Screenshot%202025-05-05%20210304.png)
+After additional finetuning on SMS:
+- Expected test set performance for job postings: accuracy - 97%, F-1 score - 85%
+- Expected test set performance for spam email: accuracy - 49%, F-1 score - 55%
+- Expected test set performance for spam sms: accuracy - 99%, F-1 score - 97%
 
-After additional fine-tuning on the SMS and email datasets: accuracy - , F-1 score - 
-- Expected test set performance for job postings: accuracy - , F-1 score - 
+After additional fine-tuning on the SMS and email datasets: 
+- Expected test set performance for job postings: accuracy - , F-1 score -
 - Expected test set performance for unlabeled Indeed postings: 
 - Expected test set performance for unlabeled LinkedIn postings: 
 
