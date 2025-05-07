@@ -64,16 +64,11 @@ Examples of what the model labeled as fraudulent in the unlabeled data:
 Example of what the model labeled as fraudulent in the labeled SMS and Email data:
   - SMS: [Example](/images/SMS/Screenshot%202025-05-05%20210058.png)
   - Email: [Example](/images/Email/Screenshot%202025-05-05%20210304.png)
-  - 
+    
 After additional finetuning on SMS:
 - Expected test set performance for job postings: accuracy - 97%, F-1 score - 85%
 - Expected test set performance for spam email: accuracy - 49%, F-1 score - 55%
 - Expected test set performance for spam sms: accuracy - 99%, F-1 score - 97%
-
-After additional fine-tuning on the SMS and email datasets: 
-- Expected test set performance for job postings: accuracy - , F-1 score -
-- Expected test set performance for unlabeled Indeed postings: 
-- Expected test set performance for unlabeled LinkedIn postings: 
 
 Work distribution:
 - Declan:  fine-tuning the BERT model on SMS and email
