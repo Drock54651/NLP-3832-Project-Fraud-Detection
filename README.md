@@ -51,7 +51,7 @@ After initial fine-tuning on the job postings dataset:
   - soft-max derived probabilities distribution: mostly within 80-100% for predictions
 - Expected test set performance for unlabeled LinkedIn postings:
   - softmax derived probabilities distribution: mostly within 80-100% for predictions
- - Expected test set performance for SMS spam: accuracy - , F-1 score -
+ - Expected test set performance for SMS spam: accuracy - 99%, F-1 score - 5%
  - Expected test set performance for email spam: accuracy - , F-1 score -
   
 
