@@ -51,8 +51,8 @@ After initial fine-tuning on the job postings dataset:
   - soft-max derived probabilities distribution: mostly within 80-100% for predictions
 - Expected test set performance for unlabeled LinkedIn postings:
   - softmax derived probabilities distribution: mostly within 80-100% for predictions
- - Expected test set performance for SMS spam: accuracy - 99%, F-1 score - 5%
- - Expected test set performance for email spam: accuracy - , F-1 score -
+ - Expected test set performance for SMS spam: accuracy - 85%, F-1 score - 34%
+ - Expected test set performance for email spam: accuracy - 46%, F-1 score - 14% 
   
 
 Note: For the unlabeled datasets, we did not have any way of discerning some kind of ground truth for them. Instead, they were used as a way to see what our already trained model would label them as. After doing so, a human could extract the postings labeled as fraudulent by the model and the human would have to check if those postings are truely fraudulent or not.
@@ -67,8 +67,9 @@ Example of what the model labeled as fraudulent in the labeled SMS and Email dat
     
 After additional finetuning on SMS:
 - Expected test set performance for job postings: accuracy - 97%, F-1 score - 85%
+- Expected test set performance for spam sms: accuracy - 99%, F-1 score - 97% (I am somewhat concerned this could be an outlier) 
 - Expected test set performance for spam email: accuracy - 49%, F-1 score - 55%
-- Expected test set performance for spam sms: accuracy - 99%, F-1 score - 97%
+
 
 Work distribution:
 - Declan:  fine-tuning the BERT model on SMS and email
